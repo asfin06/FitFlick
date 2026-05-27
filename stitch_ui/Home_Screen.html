@@ -1,0 +1,222 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ARCHIVE | The Digital Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#f9f9f9",
+                      "on-primary-container": "#83829b",
+                      "surface-tint": "#5d5c74",
+                      "on-surface-variant": "#47464c",
+                      "surface-container-high": "#e8e8e8",
+                      "surface-bright": "#f9f9f9",
+                      "surface-dim": "#dadada",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1c",
+                      "primary-container": "#1a1a2e",
+                      "outline": "#78767d",
+                      "on-secondary-container": "#5b0017",
+                      "on-primary-fixed": "#1a1a2e",
+                      "primary": "#00000b",
+                      "tertiary-container": "#2a1800",
+                      "primary-fixed": "#e2e0fc",
+                      "on-secondary-fixed-variant": "#91002b",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#fc536d",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#b57700",
+                      "inverse-on-surface": "#f1f1f1",
+                      "secondary": "#b71d3f",
+                      "secondary-fixed-dim": "#ffb2b7",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#c6c4df",
+                      "secondary-fixed": "#ffdadb",
+                      "tertiary-fixed": "#ffddb4",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "background": "#f9f9f9",
+                      "tertiary-fixed-dim": "#ffb955",
+                      "inverse-surface": "#2f3131",
+                      "on-surface": "#1a1c1c",
+                      "surface-container-low": "#f3f3f3",
+                      "surface-container": "#eeeeee",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#010000",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-tertiary-fixed": "#291800",
+                      "error": "#ba1a1a",
+                      "surface-variant": "#e2e2e2",
+                      "primary-fixed-dim": "#c6c4df",
+                      "outline-variant": "#c8c5cd",
+                      "on-tertiary-fixed-variant": "#633f00",
+                      "on-secondary-fixed": "#40000e",
+                      "on-primary-fixed-variant": "#45455b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Be Vietnam Pro"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(26, 28, 28, 0.04);
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#F9F9F9]/80 dark:bg-[#1A1A2E]/80 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<button class="hover:opacity-70 transition-opacity active:scale-95 duration-200" style="">
+<span class="material-symbols-outlined text-[#1A1A2E] dark:text-[#F9F9F9]" data-icon="menu" style="">menu</span>
+</button>
+<h1 class="font-headline uppercase tracking-tighter text-2xl font-bold tracking-[-0.02em] text-[#1A1A2E] dark:text-[#F9F9F9]" style="">
+                FitFlick
+            </h1>
+<button class="hover:opacity-70 transition-opacity active:scale-95 duration-200" style="">
+<span class="material-symbols-outlined text-[#1A1A2E] dark:text-[#F9F9F9]" data-icon="shopping_bag" style="">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 max-w-screen-xl mx-auto space-y-8">
+<!-- Search Section -->
+<section class="w-full">
+<div class="relative flex items-center h-[52px] bg-surface-container-lowest rounded-xl px-4 border-[1.5px] border-outline-variant/40 focus-within:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-outline mr-3" data-icon="search" style="">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 text-sm placeholder:text-outline/60" placeholder="Search for luxury fashion..." type="text">
+</div>
+</section>
+<!-- Category Pills (Horizontal Scroll) -->
+<nav class="flex overflow-x-auto gap-3 no-scrollbar pb-2 -mx-4 px-4">
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-medium bg-primary-container text-on-primary editorial-shadow transition-all active:scale-95" style="">All</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant/40 hover:border-primary transition-all active:scale-95" style="">New In</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant/40 hover:border-primary transition-all active:scale-95" style="">Clothing</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant/40 hover:border-primary transition-all active:scale-95" style="">Shoes</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-medium bg-surface-container-lowest text-on-surface-variant border border-outline-variant/40 hover:border-primary transition-all active:scale-95" style="">Accessories</button>
+</nav>
+<!-- Hero Editorial Banner -->
+<section class="relative h-[220px] rounded-2xl overflow-hidden group">
+<img alt="High Fashion Editorial" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high-fashion model in avant-garde beige couture dress posing against a minimalist concrete architectural background with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz83qQ-2FPPQzeXAlAefcSETToTPjnCeQ5865MWoDgXQI3PX1PTe-cwxCLXS-E0YpU27UtQvOX3_OZ4NK_ulQ4CbZirING1XZjMydoHYg_7pKx3xP1YIH6jWQeB4xR28rFaioNC4ne0_UwHCXjkv251dqTYjsN_NNEw3v6vi9qKoH4kKvyHgYlNrl2rGKKiYWVKd6Wo5UeAB3xSGitcLnS_uTFaB5ryjCONH91PB5062rHB3FfTW65UkkYI-ibHG7PI4NBEyOsfMkJ" style="">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+<h2 class="font-headline text-2xl md:text-3xl font-extrabold uppercase tracking-tight leading-none mb-2 max-w-xs" style="">
+                    SUMMER COLLECTION
+                </h2>
+<p class="font-body text-sm font-medium tracking-widest uppercase opacity-90" style="">
+                    UP TO 40% OFF — <span class="underline underline-offset-4 decoration-2" style="">Shop Now</span>
+</p>
+</div>
+</section>
+<!-- Intentional Asymmetry: Featured Lookbook -->
+<section class="grid grid-cols-12 gap-4 items-center">
+<div class="col-span-7 aspect-[4/5] bg-surface-container-low rounded-2xl overflow-hidden">
+<img alt="Street Style Editorial" class="w-full h-full object-cover" data-alt="full body shot of a stylish woman wearing a vibrant yellow modern dress walking on a clean city street at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQYh5F92Fhq5w0OhzSBrCDBqVUOu7vboHA8pe38REwSRkCwSLTbd6fkNlObQyeDjmkms_wKWNg6s1_zGUJw7lTcJvTgHZho2U-Gblr7X_ExozzDxeuIi17qtjIf5i9QHIiF__QwgB-bUYK_B4Bybdbdk1rHoR5VM7nJEdPyzEGTYbPiHJ_I1Sj3mSXTrJnS_l8idqgoxlIeDB7etY5njENEBxh9S5lHXGM3kSN97m8wA6qsWCq02bjwvihtuyj87vH3vTylw3c3GD_" style="">
+</div>
+<div class="col-span-5 pl-4">
+<p class="text-[10px] uppercase tracking-[0.2em] font-bold text-secondary mb-2" style="">Curated</p>
+<h3 class="font-headline text-3xl font-extrabold leading-tight tracking-tighter mb-4" style="">THE BOLD PIECES</h3>
+<a class="text-xs font-bold uppercase tracking-widest border-b-2 border-primary pb-1" href="#" style="">Explore Lookbook</a>
+</div>
+</section>
+<!-- Product Grid -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline text-lg font-bold uppercase tracking-tight" style="">Essential Pieces</h3>
+<span class="text-xs font-medium text-outline" style="">Showing 48 items</span>
+</div>
+<div class="grid grid-cols-2 gap-4 md:gap-8">
+<!-- Product 1 -->
+<div class="flex flex-col group">
+<div class="aspect-[3/4] bg-surface-container-lowest rounded-xl overflow-hidden mb-4 editorial-shadow relative">
+<img alt="Luxury Coat" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="minimalist studio photography of a structured beige wool luxury coat with sharp lapels and clean silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA3sgZ4OeAAGlVibDBQ7X0lfMMqw2-QcA9WcqLfnPaAYDLnIm8nNd6-G089tMgIDs-IVSv_kT6B95VgfScMt-u6pcmKgj5d1jUubXQ2LDqwjnDcQLB6xEak1o8ZhW-ySQlx2z6qEGJITgzpCcpEp-EvA8ZO5ZYYItnLVjR1jl0vt1i8R9S4vVX2ooiFscmB81U7qBCBp1K-5FfbtSgS0QEHea4VVNfGYaV23Rda3eGBE4M0b-C0Cm-BrogsrQiuGe66-haPKIB23yd" style="">
+<div class="absolute top-3 right-3">
+<button class="w-8 h-8 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center active:scale-90 transition-transform" style="">
+<span class="material-symbols-outlined text-sm" data-icon="favorite" style="">favorite</span>
+</button>
+</div>
+</div>
+<p class="text-[10px] uppercase tracking-widest font-semibold text-outline-variant mb-1" style="">ARCHIVE SIGNATURE</p>
+<h4 class="font-body font-semibold text-sm text-on-surface line-clamp-1 mb-2" style="">Tailored Wool Overcoat</h4>
+<span class="font-headline font-bold text-lg text-secondary" style="">$1,250</span>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col group mt-8">
+<div class="aspect-[3/4] bg-surface-container-lowest rounded-xl overflow-hidden mb-4 editorial-shadow relative">
+<img alt="Designer Shoes" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up detail of high-end designer stiletto shoes with silver metallic finish on a velvet dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdXSyY8o5wYsrVql9iU93hOUOvLjaBWowF7_PoudHpEVLf_5WlOrC6-MRd_e_B9TnYydlM6KeTfB3GMx-UcJUz1WUOFwIvnXQtx3Z86jHd8LT1caLTGPWNgcc0f_QNszMQlToUDnpipQzNJkeGZNdR55tDgsfecFvoojF-w_ZeoUGmi62DC9Ql537IlZYuRY4p6ek4tWys9OWAPXt50LlXe9UDXHzUz8-pWHDz1O7LIy0BbKIxLwTAJJb4PvCdOMz-8ROOJ1Gz8-3E" style="">
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 bg-tertiary-fixed text-[8px] font-bold uppercase tracking-widest text-on-tertiary-fixed rounded-sm" style="">Limited</span>
+</div>
+</div>
+<p class="text-[10px] uppercase tracking-widest font-semibold text-outline-variant mb-1" style="">LUXURY COLLECTION</p>
+<h4 class="font-body font-semibold text-sm text-on-surface line-clamp-1 mb-2" style="">Metallic Stiletto Pumps</h4>
+<span class="font-headline font-bold text-lg text-secondary" style="">$890</span>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col group -mt-8">
+<div class="aspect-[3/4] bg-surface-container-lowest rounded-xl overflow-hidden mb-4 editorial-shadow relative">
+<img alt="Luxury Bag" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="handcrafted leather handbag in rich burgundy color displayed on a minimalist white marble pedestal with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsRV0Ney9ZkbnKNVpVbCbZ_YvAR_oIfA-ttuWUFpqqK1YkZVyTMXv91_SRUUshDkodJeu4ipgLCVL3j18WM17gDhu_QcMKezEVNR-cCsCcFZpc59Nke39JXkhdYBOikiifJ99b_bppwZZHRvhuvHbqFrgfiYlo_VkYtkSnkg3NS3uWoFzv2T7C3sHuesMusHD0GBWfNLhNEjLIUtOYLsAggt77MR3QxGA0mOFTl54r4TQcPBPI7gpSx4EFztrYPMEaDCoDeWKW6MDd" style="">
+</div>
+<p class="text-[10px] uppercase tracking-widest font-semibold text-outline-variant mb-1" style="">ARCHIVE ESSENTIALS</p>
+<h4 class="font-body font-semibold text-sm text-on-surface line-clamp-1 mb-2" style="">Petite Leather Tote</h4>
+<span class="font-headline font-bold text-lg text-secondary" style="">$2,400</span>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col group">
+<div class="aspect-[3/4] bg-surface-container-lowest rounded-xl overflow-hidden mb-4 editorial-shadow relative">
+<img alt="Summer Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="flowing silk floral summer dress being worn by a model in a sun-drenched Mediterranean courtyard with vibrant plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bRVm2DgT3bfCYLHCGDSlaRwG9vr3pookV3_NMMO6p0RsaRZPr4F5opup1lk3JeGsmL_ywcel_merZJlikvgqY16kuuZJV0K9e9iahFiHVDzYcfTgaBU1hK1Wzx6Pq5PUZtQLKgjBsMxL6loUNCAPmjdsSekTaIuKboVmw-Tz7QBPs-TSLIRF8-rk3NPAFDsX7T-YAmjHP1zToAECygd1pvAGH9z47CgJTStrEOnuzHp4_lT5Vmn32mRd5kHNVZ2hCNwd5SZhmKsg" style="">
+</div>
+<p class="text-[10px] uppercase tracking-widest font-semibold text-outline-variant mb-1" style="">NEW SEASON</p>
+<h4 class="font-body font-semibold text-sm text-on-surface line-clamp-1 mb-2" style="">Floral Silk Midi Dress</h4>
+<span class="font-headline font-bold text-lg text-secondary" style="">$560</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 rounded-t-[32px] bg-white/80 dark:bg-[#1A1A2E]/80 backdrop-blur-xl shadow-[0_-4px_24px_rgba(26,26,46,0.04)] border-t border-slate-100/10">
+<div class="flex justify-around items-center px-8 pb-8 pt-4">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-[#1A1A2E] dark:text-white after:content-[''] after:w-1 after:h-1 after:bg-[#E94560] after:rounded-full after:mt-1 active:scale-90 duration-300" href="#" style="">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: &quot;FILL&quot; 1;">home</span>
+</a>
+<!-- Search -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-[#E94560] transition-colors active:scale-90 duration-300" href="#" style="">
+<span class="material-symbols-outlined" data-icon="search" style="">search</span>
+</a>
+<!-- Cart -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-[#E94560] transition-colors active:scale-90 duration-300" href="#" style="">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="">shopping_cart</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-[#E94560] transition-colors active:scale-90 duration-300" href="#" style="">
+<span class="material-symbols-outlined" data-icon="person" style="">person</span>
+</a>
+</div>
+</nav>
+</body></html>

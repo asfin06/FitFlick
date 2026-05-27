@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .headline-font {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#fc536d",
+                    "secondary": "#b71d3f",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#b57700",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#ffdadb",
+                    "tertiary-container": "#2a1800",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary-fixed-dim": "#c6c4df",
+                    "outline": "#78767d",
+                    "on-secondary-fixed": "#40000e",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#5b0017",
+                    "inverse-on-surface": "#f1f1f1",
+                    "primary-container": "#1a1a2e",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-container": "#83829b",
+                    "inverse-primary": "#c6c4df",
+                    "surface-tint": "#5d5c74",
+                    "primary": "#00000b",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadada",
+                    "primary-fixed": "#e2e0fc",
+                    "tertiary": "#010000",
+                    "background": "#f9f9f9",
+                    "on-error": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "on-surface": "#1a1c1c",
+                    "outline-variant": "#c8c5cd",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary-fixed-variant": "#633f00",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "on-tertiary-fixed": "#291800",
+                    "on-primary-fixed-variant": "#45455b",
+                    "tertiary-fixed": "#ffddb4",
+                    "on-primary-fixed": "#1a1a2e",
+                    "surface-container-low": "#f3f3f3",
+                    "on-surface-variant": "#47464c",
+                    "tertiary-fixed-dim": "#ffb955",
+                    "secondary-fixed-dim": "#ffb2b7",
+                    "on-secondary-fixed-variant": "#91002b",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "16px",
+                    "xl": "24px",
+                    "full": "9999px"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar Section -->
+<header class="fixed top-0 w-full z-50 bg-[#F9F9F9]/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<button class="flex items-center active:scale-95 transition-transform hover:opacity-70">
+<span class="material-symbols-outlined text-[#1A1A2E] dark:text-slate-100" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="headline-font font-bold tracking-tight text-lg text-[#1A1A2E] dark:text-white">CART</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</div>
+</header>
+<main class="pt-24 pb-40 px-4 max-w-2xl mx-auto space-y-6">
+<!-- Cart Items List -->
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-3 flex gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="w-24 aspect-[3/4] rounded-md overflow-hidden bg-surface-container-low flex-shrink-0">
+<img alt="Luxury Wool Coat" class="w-full h-full object-cover" data-alt="High-end minimalist tailored wool coat in charcoal grey against a clean architectural studio background with soft directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR9uUpTcaFio7gRaWomlKotcczI6IAexkNALzbMcLKyvRztujkF0AQiWLNoOw6Xvwhgft3oxBkJI8BcK6dOxK9gLzVqdlGbUIdMD_YhHj_OHaj_vLB06mQCSs7tuQiGqcA8ivlpxpD52IkAht-uoJZf2wCRHUAjCb8yzqlsS-mKdpskF_fObX4939wQPCH4SDXkeSOrhekSoo5J7BL1bTzVxnEdoyNZhH-dpB6ZY_7BZrPg4aMbUyCkgIhMFMNUX7diBIw8KZz-jum"/>
+</div>
+<div class="flex flex-col justify-between flex-grow py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-semibold text-sm text-on-surface headline-font">Sculptural Wool Overcoat</h3>
+<p class="text-xs text-on-surface-variant mt-1">Midnight Blue / Size M</p>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-end">
+<span class="text-lg font-bold text-secondary-container headline-font">$890.00</span>
+<div class="flex items-center bg-surface-container-low rounded-full px-2 py-1 gap-3">
+<button class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="remove">remove</span>
+</button>
+<span class="text-sm font-semibold w-4 text-center">1</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-3 flex gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="w-24 aspect-[3/4] rounded-md overflow-hidden bg-surface-container-low flex-shrink-0">
+<img alt="Silk Blouse" class="w-full h-full object-cover" data-alt="Elegant cream silk blouse with subtle sheen displayed on a minimal mannequin under soft ambient gallery lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKecdbGwnBoUAILJsIkwKROFGJ2hTYIRIRs1vJoRS-GLBJD-kzuUd49vuo-feXFQ-7SDpWLKTEOp5qDU21GDLbMUYYRsLlb6B1s2MUMW4UDJimJo9KF9L-dd_NSQKC2xbfyHyxlwgcnIVja3sXWjEF76YkRZ6-MugPf2nuChYB8jpHVkzUpnuVZxRTU9ceWdaBoBA-9zKvaKq9oDCLWy9R1C_bUDQ54gD2j8hcoqGB1kNpUpFNz5cmLzbdBYY7dVaXlGFnqyXL6yJ-"/>
+</div>
+<div class="flex flex-col justify-between flex-grow py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-semibold text-sm text-on-surface headline-font">Lustrous Silk Blouse</h3>
+<p class="text-xs text-on-surface-variant mt-1">Pearl White / Size S</p>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-end">
+<span class="text-lg font-bold text-secondary-container headline-font">$320.00</span>
+<div class="flex items-center bg-surface-container-low rounded-full px-2 py-1 gap-3">
+<button class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="remove">remove</span>
+</button>
+<span class="text-sm font-semibold w-4 text-center">1</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-3 flex gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="w-24 aspect-[3/4] rounded-md overflow-hidden bg-surface-container-low flex-shrink-0">
+<img alt="Leather Tote" class="w-full h-full object-cover" data-alt="Handcrafted black grain leather tote bag with gold hardware detail positioned on a marble surface with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrxNMriPAK0pgIs1Vo48OqljQBZEPjhj5C2cxpTbxJ7RaVC6D0Jho4qeiDSwN9rKjgLiiy11UFEv5IFibpkIfUNuxjnzwKGawoKry5esO3ygVz9n4GiI6q82OTb81nShOQrYA4MrM4tSV1BPcmlowLdm57OCAHBWaQNvie642UFFIZ0qgY4IDmXIismgfSsSFpYtYtHL3SJYOvfUPzwvJIj69CUe5TJ_Aw2ZiiqdUQrCn-sOLmV0PuZt49IDXZqifGvZcQKBoLBYm_"/>
+</div>
+<div class="flex flex-col justify-between flex-grow py-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-semibold text-sm text-on-surface headline-font">Signature Leather Tote</h3>
+<p class="text-xs text-on-surface-variant mt-1">Noir Black / One Size</p>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-end">
+<span class="text-lg font-bold text-secondary-container headline-font">$1,250.00</span>
+<div class="flex items-center bg-surface-container-low rounded-full px-2 py-1 gap-3">
+<button class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="remove">remove</span>
+</button>
+<span class="text-sm font-semibold w-4 text-center">1</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Summary Section -->
+<section class="bg-surface-container-low rounded-xl p-6 mt-8 space-y-4">
+<h2 class="headline-font font-bold text-primary uppercase tracking-widest text-xs">Order Summary</h2>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-sm">Subtotal</span>
+<span class="text-on-surface font-medium">$2,460.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-sm">Shipping</span>
+<span class="text-on-surface font-medium">Complimentary</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-sm">Estimated Tax</span>
+<span class="text-on-surface font-medium">$196.80</span>
+</div>
+<div class="h-px bg-outline-variant/30 my-2"></div>
+<div class="flex justify-between items-center">
+<span class="headline-font font-bold text-lg text-primary">Total</span>
+<span class="headline-font font-bold text-xl text-primary">$2,656.80</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Checkout Button Container -->
+<footer class="fixed bottom-0 left-0 w-full bg-surface-container-lowest/80 backdrop-blur-xl px-4 py-6 z-50">
+<div class="max-w-2xl mx-auto">
+<button class="w-full h-[52px] bg-primary-container text-white rounded-lg headline-font font-bold tracking-[0.1em] text-sm uppercase flex items-center justify-center gap-2 hover:bg-primary transition-all active:scale-[0.98] shadow-lg shadow-primary/10">
+                CHECKOUT
+                <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#c6c4df",
+                "primary-fixed": "#e2e0fc",
+                "on-background": "#1a1c1c",
+                "primary": "#00000b",
+                "on-tertiary-fixed-variant": "#633f00",
+                "surface-container-highest": "#e2e2e2",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#f9f9f9",
+                "on-primary-fixed-variant": "#45455b",
+                "surface-variant": "#e2e2e2",
+                "surface-container": "#eeeeee",
+                "on-primary-fixed": "#1a1a2e",
+                "tertiary": "#010000",
+                "on-tertiary-fixed": "#291800",
+                "surface-dim": "#dadada",
+                "on-secondary-fixed-variant": "#91002b",
+                "primary-fixed-dim": "#c6c4df",
+                "on-primary-container": "#83829b",
+                "on-tertiary-container": "#b57700",
+                "surface-tint": "#5d5c74",
+                "surface": "#f9f9f9",
+                "on-tertiary": "#ffffff",
+                "tertiary-fixed": "#ffddb4",
+                "inverse-on-surface": "#f1f1f1",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed": "#40000e",
+                "inverse-surface": "#2f3131",
+                "background": "#f9f9f9",
+                "on-surface-variant": "#47464c",
+                "tertiary-fixed-dim": "#ffb955",
+                "surface-container-high": "#e8e8e8",
+                "on-error": "#ffffff",
+                "on-error-container": "#93000a",
+                "secondary-fixed-dim": "#ffb2b7",
+                "primary-container": "#1a1a2e",
+                "secondary": "#b71d3f",
+                "on-primary": "#ffffff",
+                "secondary-fixed": "#ffdadb",
+                "error": "#ba1a1a",
+                "tertiary-container": "#2a1800",
+                "outline": "#78767d",
+                "secondary-container": "#fc536d",
+                "on-secondary-container": "#5b0017",
+                "on-surface": "#1a1c1c",
+                "surface-container-low": "#f3f3f3",
+                "outline-variant": "#c8c5cd"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "16px",
+                "xl": "24px",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Be Vietnam Pro", "sans-serif"],
+                "body": ["Plus Jakarta Sans", "sans-serif"],
+                "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#F9F9F9]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<button class="text-on-primary-fixed hover:opacity-70 transition-opacity active:scale-95 duration-300" style="">
+<span class="material-symbols-outlined" style="">menu</span>
+</button>
+<h1 class="font-headline font-bold tracking-tighter uppercase text-xl text-on-primary-fixed" style="">FitFlick</h1>
+<button class="text-on-primary-fixed hover:opacity-70 transition-opacity active:scale-95 duration-300" style="">
+<span class="material-symbols-outlined" style="">search</span>
+</button>
+</div>
+</header>
+<main class="pt-20 px-6 max-w-7xl mx-auto">
+<!-- Category Filter & Sort Cluster -->
+<section class="mb-8 overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline font-bold text-2xl tracking-tight text-on-primary-fixed" style="">Latest Arrivals</h2>
+<div class="flex items-center gap-2 text-on-surface-variant cursor-pointer hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" style="">tune</span>
+<span class="text-xs font-semibold uppercase tracking-widest" style="">Filter</span>
+</div>
+</div>
+<div class="flex gap-3 overflow-x-auto hide-scrollbar pb-2">
+<button class="bg-primary-container text-on-secondary px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-transform active:scale-95" style="">All Items</button>
+<button class="bg-surface-container-lowest text-on-primary-fixed-variant px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase border border-outline-variant/20 hover:bg-surface-container-low transition-all" style="">Outerwear</button>
+<button class="bg-surface-container-lowest text-on-primary-fixed-variant px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase border border-outline-variant/20 hover:bg-surface-container-low transition-all" style="">Footwear</button>
+<button class="bg-surface-container-lowest text-on-primary-fixed-variant px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase border border-outline-variant/20 hover:bg-surface-container-low transition-all" style="">Accessories</button>
+<button class="bg-surface-container-lowest text-on-primary-fixed-variant px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase border border-outline-variant/20 hover:bg-surface-container-low transition-all" style="">Knitwear</button>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1: Editorial Style -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_-4px_32px_rgba(26,28,28,0.04)] transition-all duration-500 hover:-translate-y-1">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img alt="High fashion coat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Editorial portrait of a model wearing a structured dark navy wool coat in a minimalist concrete gallery setting with soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4vDtes6Qk83YZBy2lQRO4lurNVtGQUs8aOKSifdkpxxnKQHfHqhNPMnDKCcQX7eXMmVnQw1x-DVZVKLg9owcloG6e0iFlxGiKlnDX1QNJsvmkKHVhK8QqdQ2gwhX13iYqA1o6gY6IlGzVgzROfSwdq2YYmiTxEzLarD68ns91AYGsC7rSkBQrJEGoJxmIeaonJ7FRuW8o6X_aNT3o_tYORWr0Gs6Kv4qaILgRRvmLTsEDGojpu-j9wZwW7uARpa73wO2v_Lm-M5Ku" style="">
+<button class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded-full text-primary hover:text-secondary transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<span class="text-[10px] font-bold tracking-[0.2em] text-secondary uppercase" style="">New Season</span>
+<span class="text-tertiary-fixed-variant font-bold text-xs" style="">★ 4.9</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-on-primary-fixed leading-tight mb-4" style="">Sculpted Wool Overcoat</h3>
+<div class="flex items-center justify-between">
+<p class="font-headline font-extrabold text-2xl text-secondary tracking-tight" style="">$1,250</p>
+<button class="bg-primary text-white p-3 rounded-md hover:bg-secondary transition-colors active:scale-95" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_-4px_32px_rgba(26,28,28,0.04)] transition-all duration-500 hover:-translate-y-1">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img alt="Luxury shoes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of luxury leather boots on a reflective dark marble surface with dramatic high-contrast lighting highlighting textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu3UXPHLik5Rv7_qww73UniYdL4dqt1jdgRucr5bNbPFr_iGKCwDXGPqB2nMJX6B5WqcKxGqJEmu3bsT8iqli1n0_Vwkd9Y3sUZV6xNy11OvmTU3Mzo-L5JE83HGzFFw5AOL3HnWHrHLoic-rcRkg4zcpVSiobdUyjJsJTEJle1BoDNmgRLpHOCJCxZxEHD5_AHT85VDyA4wQhfPSAEy-Lz8ibAKNauvtir00xAs-ehc7CjWPgYSRSwSYCajN4KIhWJFrTFgN5boxA" style="">
+<button class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded-full text-primary hover:text-secondary transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<span class="text-[10px] font-bold tracking-[0.2em] text-on-primary-container uppercase" style="">Essentials</span>
+<span class="text-tertiary-fixed-variant font-bold text-xs" style="">★ 4.8</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-on-primary-fixed leading-tight mb-4" style="">Obsidian Leather Boots</h3>
+<div class="flex items-center justify-between">
+<p class="font-headline font-extrabold text-2xl text-secondary tracking-tight" style="">$890</p>
+<button class="bg-primary text-white p-3 rounded-md hover:bg-secondary transition-colors active:scale-95" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_-4px_32px_rgba(26,28,28,0.04)] transition-all duration-500 hover:-translate-y-1">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img alt="Knitwear" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Tactile shot of a cream-colored cashmere sweater folded on a mid-century modern wooden chair with warm golden hour shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAewzBWbDhpPxCsV6Z_uURiYgCma3qMgDR1TtjbYeHTfKkm0FlnlgMPunBzOBDmKJiaZu10XG1mE_a8croczgw--k20BwA1pQuplifYM5SZNGMYQ6m_iocf6AiyMVbZ1a1TlAYgBdgXvu-Jk6ZNvgWgMkkyjeYSWxsBSABRKPkp4P3VLqTs7HJedCEPYkBPV57_mW-HfwL660of9CpFy_kOhy8fT2cXWPiHehNMx1_dXNwm8qqkL7g94wpvCvdCSuxDFAUt6iY7OPWA" style="">
+<button class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded-full text-primary hover:text-secondary transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<span class="text-[10px] font-bold tracking-[0.2em] text-tertiary-fixed-variant uppercase" style="">Limited Edition</span>
+<span class="text-tertiary-fixed-variant font-bold text-xs" style="">★ 5.0</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-on-primary-fixed leading-tight mb-4" style="">Pure Cashmere Rollneck</h3>
+<div class="flex items-center justify-between">
+<p class="font-headline font-extrabold text-2xl text-secondary tracking-tight" style="">$540</p>
+<button class="bg-primary text-white p-3 rounded-md hover:bg-secondary transition-colors active:scale-95" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4: Asymmetric Editorial Look -->
+<div class="md:col-span-2 group relative bg-surface-container-low rounded-lg overflow-hidden flex flex-col md:flex-row items-center transition-all duration-500 hover:shadow-xl">
+<div class="w-full md:w-1/2 aspect-[4/5] md:aspect-auto md:h-full overflow-hidden">
+<img alt="Lookbook campaign" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" data-alt="Cinematic fashion campaign photo of a model walking through a misty pine forest in a high-fashion avant-garde silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb3vlwPQWxfOvJnAowftbrpWbdAggc5BY_Ib1AoXSRUZjqyeKARo3SnDPrNF3RDns4897W3w8JsHez-d0ingyIiu9zL8WFl-kPEDibL6HP9AR8hn1ILdu8PMiPW5zfksOKKrqsApWWEV21Y7dDq7PVlasYWW6Vxy-QDqee1kS6Ky1meTq0UQlZB8mgNprmfio4jlZxKMdl0bsaSgO9464lOHx-i76xfbXNOnPeTYPVRUHjOIlV-58pgm3pGLUH6QFO_YbCN8yfk6bA" style="">
+</div>
+<div class="p-8 md:p-12 w-full md:w-1/2">
+<p class="text-[10px] font-bold tracking-[0.3em] text-on-primary-container uppercase mb-4" style="">Curated Collection</p>
+<h3 class="font-headline font-extrabold text-3xl md:text-4xl text-on-primary-fixed leading-none mb-6" style="">The Winter Archive Series</h3>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-8 opacity-80" style="">Explore the juxtaposition of heavy textures and sharp architectural tailoring designed for the modern urban landscape.</p>
+<button class="inline-flex items-center gap-4 text-on-primary-fixed font-bold tracking-widest uppercase text-xs group/btn" style="">
+                        View Editorial 
+                        <span class="w-12 h-[1px] bg-primary group-hover/btn:w-16 transition-all duration-300"></span>
+</button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_-4px_32px_rgba(26,28,28,0.04)] transition-all duration-500 hover:-translate-y-1">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img alt="Classic Shirt" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist top-down shot of a crisp white poplin shirt on a light grey background with sharp industrial shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbCca4FbB_Y0f89HddGKP4y5ZzThd7u2q2WFHw7e7N8Y2fZ6g-3ay996JK2sXumTGz8bllB68caPGmXZDDIf7eSlqILW-aHM2XwT4UKnI6fyCF0QIW3vbUs6dAqsxWe2fuOlJUuzrRIJXHGZHZOt9SoAsqtne3GyyjDxFsST46jei04ZlpRQQzsLBwdqpNPmSi-cmBGQjEFEf1tZsE8E7l1PQYs3wAX3fFTMIxHO52594-FFAAAvrhHarqFaf5K-Bp4j9yE_RmzuoX" style="">
+<button class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md p-2 rounded-full text-primary hover:text-secondary transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<span class="text-[10px] font-bold tracking-[0.2em] text-on-primary-container uppercase" style="">Legacy Piece</span>
+<span class="text-tertiary-fixed-variant font-bold text-xs" style="">★ 4.7</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-on-primary-fixed leading-tight mb-4" style="">Poplin Archive Shirt</h3>
+<div class="flex items-center justify-between">
+<p class="font-headline font-extrabold text-2xl text-secondary tracking-tight" style="">$320</p>
+<button class="bg-primary text-white p-3 rounded-md hover:bg-secondary transition-colors active:scale-95" style="">
+<span class="material-symbols-outlined text-sm" style="">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-safe bg-[#FFFFFF]/80 backdrop-blur-2xl border-t border-[#C8C5CD]/20 z-50 rounded-t-2xl shadow-[0_-4px_32px_rgba(26,28,28,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#45455B]/60 hover:text-primary transition-all duration-200 active:scale-90" href="#" style="">
+<span class="material-symbols-outlined" data-icon="grid_view" style="">grid_view</span>
+<span class="font-plus-jakarta-sans text-[10px] font-medium uppercase tracking-[0.1em] mt-1" style="">ARCHIVE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold transition-all duration-200 active:scale-90" href="#" style="">
+<span class="material-symbols-outlined" data-icon="search" style="font-variation-settings: &quot;FILL&quot; 1;">search</span>
+<span class="font-plus-jakarta-sans text-[10px] font-bold uppercase tracking-[0.1em] mt-1" style="">SEARCH</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#45455B]/60 hover:text-primary transition-all duration-200 active:scale-90 relative" href="#" style="">
+<span class="material-symbols-outlined" data-icon="favorite" style="">favorite</span>
+<span class="font-plus-jakarta-sans text-[10px] font-medium uppercase tracking-[0.1em] mt-1" style="">WISHLIST</span>
+<span class="absolute top-0 right-1 w-1.5 h-1.5 bg-secondary rounded-full"></span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#45455B]/60 hover:text-primary transition-all duration-200 active:scale-90" href="#" style="">
+<span class="material-symbols-outlined" data-icon="person" style="">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-medium uppercase tracking-[0.1em] mt-1" style="">PROFILE</span>
+</a>
+</nav>
+<!-- Cart Quick Access (FAB-style but subtle) -->
+<button class="fixed bottom-24 right-6 bg-primary text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-secondary transition-all active:scale-90 z-40 group" style="">
+<span class="material-symbols-outlined" style="">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full border-2 border-surface" style="">2</span>
+</button>
+</body></html>

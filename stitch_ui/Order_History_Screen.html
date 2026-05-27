@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800;900&amp;family=Plus_Jakarta_Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#dadada",
+                    "on-secondary-fixed-variant": "#91002b",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container": "#eeeeee",
+                    "on-primary-fixed": "#1a1a2e",
+                    "tertiary": "#010000",
+                    "on-tertiary-fixed": "#291800",
+                    "primary-fixed-dim": "#c6c4df",
+                    "on-primary-container": "#83829b",
+                    "on-tertiary-container": "#b57700",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#c6c4df",
+                    "primary-fixed": "#e2e0fc",
+                    "on-background": "#1a1c1c",
+                    "primary": "#00000b",
+                    "on-tertiary-fixed-variant": "#633f00",
+                    "on-primary-fixed-variant": "#45455b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "outline": "#78767d",
+                    "secondary": "#b71d3f",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffdadb",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#2a1800",
+                    "surface-container-low": "#f3f3f3",
+                    "outline-variant": "#c8c5cd",
+                    "secondary-container": "#fc536d",
+                    "on-secondary-container": "#5b0017",
+                    "on-surface": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#40000e",
+                    "inverse-surface": "#2f3131",
+                    "background": "#f9f9f9",
+                    "on-surface-variant": "#47464c",
+                    "surface-tint": "#5d5c74",
+                    "surface": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffddb4",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#ffb2b7",
+                    "primary-container": "#1a1a2e",
+                    "tertiary-fixed-dim": "#ffb955",
+                    "surface-container-high": "#e8e8e8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Be Vietnam Pro"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md flex items-center justify-between px-6 h-16 w-full">
+<button class="active:scale-95 transition-transform duration-200 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-50">arrow_back</span>
+</button>
+<h1 class="font-['Be_Vietnam_Pro'] tracking-tight font-bold uppercase text-slate-900 dark:text-slate-50 text-center">ORDER HISTORY</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-6">
+<!-- Order Card 1: Delivered -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] space-y-4">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">#ORD-7721</p>
+<p class="text-sm font-medium text-on-surface">September 12, 2023</p>
+</div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest px-2 py-1 rounded bg-green-50 text-green-600">Delivered</span>
+</div>
+<div class="flex gap-3">
+<div class="w-16 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fashion item" class="w-full h-full object-cover" data-alt="Close-up of a luxury yellow knit sweater on a neutral studio background, high fashion editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGryY5PnWLQHUqwoNxSEj2AQuzCyZh0l2dQXjQkand77_Xqix1YOkczKUz8yQWrDhwVoo_GZtFCVo86l_LizOlAS2hInmVKT8bgReOb5_xJd32aoOr9cuErxAOro-hYgwPYn5LRBxPexu4AgQUmUPnuN5amAqIFk1dnSXjI6J-UdtFgr1dQ64E5UT8SbrKtBQOQL7PIoNWuxCJJHNF9K4cAm5EDmUSIDh491X0LcxOPpOgEbfLs7cCkzs7FgIYqB1w02POBZwAcnbB"/>
+</div>
+<div class="w-16 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fashion item" class="w-full h-full object-cover" data-alt="Editorial shot of a minimal black leather handbag resting on a marble surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM7hvM3p7c6mRVaNLhEG_zP_dnRrrMS_r3eH4iEFn_MME2tw8w2p03shPG8jd1mfMsTdgMoZt2klS04U7TxzcxAmjfZzUcURI0idQn6VfgYRNMu76eN6wp1sTyrL4-oLDYixK9Rb20cF3auMhff5grNmmyQFDkFXHrKUyyN_bWIyoBVjVWrNSeQKHU2dISVth7dp3QDoQrN1ZcQbYMtJw3UFtH9HoXTFuQEDNslsV0YWJ-8rvUcg72UJ2e4tVpzbuA4MzVeift0g_C"/>
+</div>
+<div class="w-16 h-20 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+<span class="text-xs font-bold text-on-surface-variant">+1</span>
+</div>
+</div>
+<div class="flex justify-between items-end pt-2 border-t border-surface-container-high">
+<p class="text-xs text-on-surface-variant">3 Items</p>
+<p class="font-['Be_Vietnam_Pro'] font-extrabold text-xl text-secondary">$1,240.00</p>
+</div>
+</div>
+<!-- Order Card 2: In Transit -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] space-y-4">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">#ORD-8842</p>
+<p class="text-sm font-medium text-on-surface">October 02, 2023</p>
+</div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest px-2 py-1 rounded bg-primary-container text-on-primary-fixed">In Transit</span>
+</div>
+<div class="flex gap-3">
+<div class="w-16 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fashion item" class="w-full h-full object-cover" data-alt="Modern designer jacket in deep navy blue with polished metallic buttons, editorial studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFb4pnlvmT-j2Gx3h0KtjY0s3aiHzPJWWkrtYKcSuqbzPpzc8rzZB7P7kwdhDx9USMG1zWTYvYoMr0-xHvrTmm-8SZRujFB9NN9U5Lpbi22x7WFqebv0bVCFrhDARq8yxgsQUIljP3vFwlI0dIHBlzqVfS23DWrDMmkDelWbtMfQibBJaTAofnEOD5mnKnRgJ3EzS21tDdMGVDb5EX70ocuyU_PNyiFpPtOkPgQHBZMveseGGw_GlazpOAFQKJtNxFAlygA0_xvcsc"/>
+</div>
+<div class="w-16 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fashion item" class="w-full h-full object-cover" data-alt="Luxury white minimalist sneakers against a stark white background, clean composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9V0nxJv9gK4pjwlchTseamTe6yyDM-0YcD6jufWpGBkFMIveukLfNJ2mRy9YyUG4eT4wr2NL3fgNVEzSK69VAf6NnOe1kfgn-RRjb8anVUqrSsiL8BhC4OjPehAMl2DWjsfo-aP3cq0AzsV8b-Nmm8k9ioeHHSAyJbzRoxg66HePATUj_-ZeicGCZ3oiApeECmHGt_OUHEqU_RYgaeS0YIYHEUu9upRI71X-LOo3OCfDHnuxZR9vwWgLx5cfSs_OkfaYKgJrVgTIa"/>
+</div>
+</div>
+<div class="flex justify-between items-end pt-2 border-t border-surface-container-high">
+<p class="text-xs text-on-surface-variant">2 Items</p>
+<p class="font-['Be_Vietnam_Pro'] font-extrabold text-xl text-secondary">$890.00</p>
+</div>
+</div>
+<!-- Order Card 3: Delivered -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] space-y-4">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">#ORD-6610</p>
+<p class="text-sm font-medium text-on-surface">August 28, 2023</p>
+</div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest px-2 py-1 rounded bg-green-50 text-green-600">Delivered</span>
+</div>
+<div class="flex gap-3">
+<div class="w-16 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fashion item" class="w-full h-full object-cover" data-alt="Classic black high-quality t-shirt with premium cotton texture shown in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAEZhF7MyfGOYRe9US4GJa6Ryy9BnuncFgrH34oicAbAdgOpbVxLLFKBKZ_lDziimN0sjXpfcoGIMjlzHKxMWtxxuIhgdgwLylQOri6Ddrnzuwtr2tMBFMH4SXqCtpWcZS603gbPAieyL819AXHq8NaVXQQxrucNw-dT0ymK6cbNd2_Tw-trmw5yMW52IsJ-txeiMk8TIYUQfOWZtT43VQRqcvziXPr9ArR7cGlXoYiKKERoGFNF1dtXIet0Dj_4RjUQuN8GzTyKyF"/>
+</div>
+</div>
+<div class="flex justify-between items-end pt-2 border-t border-surface-container-high">
+<p class="text-xs text-on-surface-variant">1 Item</p>
+<p class="font-['Be_Vietnam_Pro'] font-extrabold text-xl text-secondary">$215.00</p>
+</div>
+</div>
+<!-- Order Card 4: Delivered -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] space-y-4 opacity-70">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">#ORD-5509</p>
+<p class="text-sm font-medium text-on-surface">July 14, 2023</p>
+</div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest px-2 py-1 rounded bg-green-50 text-green-600">Delivered</span>
+</div>
+<div class="flex gap-3">
+<div class="w-16 h-20 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fashion item" class="w-full h-full object-cover" data-alt="Detail of a pleated designer skirt in muted beige, showing high-end fabric grain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl56iqWmdKxKL6_glQC5VONLipYdaDg0PWaVXNWWILgQgAcxstfV5KwLu4Z7ojuhUtgKMZJL6l49NRM3GoK4J-yMkqQFnHiRczjhUoV9mJRucXZ1QYZW4sdzIKA1-QWxNATavbXr1vGwwUg2vhRtJXoUDjL0f5IY3agLmxU26m0OhC9cv_ABFAen8oNwaiQrpZ7dWdGYwa61Ial9KH9_CSYI4KkDYi9IWNz6ggVPiidasxwb4u8SFDjYpMS1jo7RwLDgSzYV0kbMIT"/>
+</div>
+</div>
+<div class="flex justify-between items-end pt-2 border-t border-surface-container-high">
+<p class="text-xs text-on-surface-variant">1 Item</p>
+<p class="font-['Be_Vietnam_Pro'] font-extrabold text-xl text-secondary">$540.00</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 rounded-t-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.04)]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-rose-500 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest">Curate</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-rose-500 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined mb-1">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest">Archive</span>
+</div>
+<!-- Semantic mapping: Order History page highlights "Orders" tab -->
+<div class="flex flex-col items-center justify-center text-rose-600 dark:text-rose-400 bg-rose-50/50 dark:bg-rose-900/20 rounded-xl px-3 py-1 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest">Orders</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-rose-500 transition-all active:scale-90 duration-300">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest">Profile</span>
+</div>
+</nav>
+</body></html>

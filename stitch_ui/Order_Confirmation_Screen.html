@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#1a1a2e",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#2a1800",
+                        "on-surface-variant": "#47464c",
+                        "background": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-fixed-dim": "#ffb2b7",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary-fixed-variant": "#633f00",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed": "#e2e0fc",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary-fixed-variant": "#45455b",
+                        "secondary-fixed": "#ffdadb",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-fixed": "#ffddb4",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed-dim": "#c6c4df",
+                        "outline-variant": "#c8c5cd",
+                        "primary": "#00000b",
+                        "surface": "#f9f9f9",
+                        "secondary": "#b71d3f",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-fixed": "#40000e",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#83829b",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#010000",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5d5c74",
+                        "on-secondary-container": "#5b0017",
+                        "on-tertiary-fixed": "#291800",
+                        "primary-container": "#1a1a2e",
+                        "tertiary-fixed-dim": "#ffb955",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#b57700",
+                        "surface-dim": "#dadada",
+                        "outline": "#78767d",
+                        "inverse-primary": "#c6c4df",
+                        "secondary-container": "#fc536d",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#91002b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Be Vietnam Pro"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Be Vietnam Pro', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#F9F9F9]/80 dark:bg-slate-950/80 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[#1A1A2E] dark:text-slate-100" data-icon="close">close</span>
+</div>
+<h1 class="text-lg tracking-[0.2em] font-bold text-[#1A1A2E] dark:text-slate-100 font-beVietnamPro uppercase">CONFIRMATION</h1>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 pb-12 px-6 max-w-2xl mx-auto">
+<!-- Success State Section -->
+<section class="flex flex-col items-center text-center mb-12">
+<div class="w-24 h-24 mb-8 bg-surface-container-lowest flex items-center justify-center rounded-full shadow-[0_32px_64px_-15px_rgba(0,0,0,0.04)]">
+<span class="material-symbols-outlined text-[48px] text-[#4CAF50]" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h2 class="text-[24px] font-headline font-bold leading-tight tracking-tighter text-on-primary-fixed uppercase mb-4">
+                THANK YOU FOR YOUR ORDER
+            </h2>
+<p class="text-on-surface-variant font-body text-md max-w-xs">
+                Your order <span class="font-bold text-on-surface">#82347-90</span> has been placed successfully.
+            </p>
+</section>
+<!-- Order Detail Card (Asymmetric Layering) -->
+<div class="relative group">
+<!-- Decorative Accent Background -->
+<div class="absolute -top-4 -right-4 w-32 h-32 bg-secondary-container/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-500"></div>
+<section class="relative bg-surface-container-lowest rounded-xl shadow-[0_32px_32px_-12px_rgba(26,28,28,0.04)] p-8 overflow-hidden">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-sm font-label font-bold text-on-primary-fixed-variant uppercase tracking-widest mb-1">Order Summary</h3>
+<p class="text-on-surface-variant text-sm">3 items purchased</p>
+</div>
+<div class="bg-surface-container-low px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed-variant">
+                        Confirmed
+                    </div>
+</div>
+<div class="space-y-6">
+<!-- Delivery Estimation -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/5 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-primary-fixed-variant uppercase tracking-tighter mb-1">Estimated Delivery</p>
+<p class="text-on-surface font-semibold">Oct 24 - Oct 26</p>
+</div>
+</div>
+<!-- Shipping Address -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/5 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-primary-fixed-variant uppercase tracking-tighter mb-1">Shipping to</p>
+<p class="text-on-surface text-sm leading-relaxed">
+                                Alexander McQueen<br/>
+                                124 Savile Row, Mayfair<br/>
+                                London, W1S 3PR, UK
+                            </p>
+</div>
+</div>
+</div>
+<!-- Subtle Tonal Transition Divider -->
+<div class="h-[1px] w-full bg-surface-container-low my-8"></div>
+<!-- Abstract Visual Placeholder -->
+<div class="grid grid-cols-3 gap-2">
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden relative">
+<img alt="luxury apparel" class="w-full h-full object-cover opacity-80" data-alt="close-up of premium fabric texture on a high-fashion garment with soft editorial lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9XBWG92jh1vDOVKMtFTx2GG0PYleSxFjzsPodbLNv-KhQvSuwk5dbuGjmvrv4wEYXbpqBuiW_hvdVVGPYzfrmZnfs_P-UakbFG41TFEtr2b7M4S13TDmkp7nkd982OFZdRnrTCrE_j7c1hOORSq1mH3kHjs240kTjaNizzNPmhSmjtDkxW-WEWXEqK0MRpDrJYrGnePr-aV8_a7O5Yg3RRhv-OE_QSvqw4ezwHaMBjRdOCgqzkzQBjKBYo-Ok_7D9I1opT677EwGM"/>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden relative">
+<img alt="luxury footwear" class="w-full h-full object-cover opacity-80" data-alt="minimalist studio shot of designer leather sneakers on a stone pedestal with clean architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfapZBVcKlY74W0Xm8rW6b2urBuF0tfGJXCC5OZ9ERZN_x1hwr7NBObB-rTz8Vuxu_6gMglVK5heO4DtaBeizeQybNjGYSu27LFxXZMAqKbAfz-4lfMWOrV43vG3fY0-MN69iEqxnoIUcfYYwKAi3Ndgzkktj1xy5JwAoa8weA7MBImZuKDVSJ_ybfcfAc2cMcH6Mgob0M8fShrVR67ZrU5dnfWtcsfE0rE9EVyb68W34peKjOrQRBd-_R6Frq9QMFOgWctbMEyuGp"/>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-lg flex items-center justify-center">
+<span class="text-xs font-bold text-on-surface-variant">+1</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Order Total Overlay (Editorial Style) -->
+<div class="mt-8 mb-12 flex justify-between items-end px-2">
+<div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-[0.2em] mb-1">Total Paid</p>
+<p class="text-3xl font-headline font-extrabold text-on-primary-fixed tracking-tighter">£1,240.00</p>
+</div>
+<div class="text-right">
+<a class="text-xs font-bold text-on-primary-fixed underline underline-offset-8 hover:text-secondary transition-colors uppercase tracking-widest" href="#">
+                    View Receipt
+                </a>
+</div>
+</div>
+<!-- Actions -->
+<div class="space-y-4">
+<button class="h-[52px] w-full bg-primary-container text-white rounded-xl font-label font-semibold text-sm uppercase tracking-[0.1em] shadow-[0_12px_24px_-8px_rgba(26,26,46,0.3)] hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                CONTINUE SHOPPING
+            </button>
+<p class="text-center text-[11px] text-on-surface-variant font-medium uppercase tracking-[0.05em]">
+                A confirmation email has been sent to your inbox.
+            </p>
+</div>
+</main>
+<!-- Support Section (Editorial Context) -->
+<footer class="mt-auto py-12 px-6 border-t border-surface-container-low">
+<div class="max-w-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="help_outline">help_outline</span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface">Need help with your order?</span>
+</div>
+<div class="flex gap-8">
+<a class="text-xs text-on-surface-variant hover:text-on-primary-fixed transition-colors" href="#">Contact Support</a>
+<a class="text-xs text-on-surface-variant hover:text-on-primary-fixed transition-colors" href="#">Returns Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

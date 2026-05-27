@@ -1,0 +1,204 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Checkout | The Editorial Archive</title>
+<!-- Google Fonts: Be Vietnam Pro & Plus Jakarta Sans used as per Design System -->
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-container": "#83829b",
+                      "surface-container-highest": "#e2e2e2",
+                      "surface-tint": "#5d5c74",
+                      "on-tertiary-fixed": "#291800",
+                      "inverse-surface": "#2f3131",
+                      "error": "#ba1a1a",
+                      "on-primary-fixed": "#1a1a2e",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#c6c4df",
+                      "tertiary": "#010000",
+                      "surface-container": "#eeeeee",
+                      "on-surface": "#1a1c1c",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-fixed": "#40000e",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed": "#ffdadb",
+                      "primary-fixed": "#e2e0fc",
+                      "outline": "#78767d",
+                      "inverse-on-surface": "#f1f1f1",
+                      "on-error-container": "#93000a",
+                      "surface": "#f9f9f9",
+                      "primary": "#00000b",
+                      "outline-variant": "#c8c5cd",
+                      "on-secondary-fixed-variant": "#91002b",
+                      "tertiary-container": "#2a1800",
+                      "primary-fixed-dim": "#c6c4df",
+                      "tertiary-fixed": "#ffddb4",
+                      "surface-container-high": "#e8e8e8",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#45455b",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb955",
+                      "primary-container": "#1a1a2e",
+                      "surface-bright": "#f9f9f9",
+                      "on-surface-variant": "#47464c",
+                      "surface-container-low": "#f3f3f3",
+                      "secondary-container": "#fc536d",
+                      "secondary": "#b71d3f",
+                      "on-tertiary-container": "#b57700",
+                      "on-tertiary-fixed-variant": "#633f00",
+                      "on-background": "#1a1c1c",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#dadada",
+                      "on-secondary-container": "#5b0017",
+                      "secondary-fixed-dim": "#ffb2b7",
+                      "background": "#f9f9f9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Be Vietnam Pro", "sans-serif"],
+                      "body": ["Plus Jakarta Sans", "sans-serif"],
+                      "label": ["Plus Jakarta Sans", "sans-serif"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Be Vietnam Pro', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar Shared Component Mapping -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full bg-gradient-to-b from-slate-200/20 to-transparent">
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-slate-900 active:scale-95 transition-transform duration-200" data-icon="arrow_back" style="">arrow_back</button>
+</div>
+<h1 class="font-['Be_Vietnam_Pro'] font-bold tracking-tight text-lg uppercase text-slate-900" style="">CHECKOUT</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 pb-40 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Shipping Address Section -->
+<section class="space-y-4">
+<div class="flex justify-between items-end">
+<h2 class="text-xl font-bold tracking-tight text-primary" style="">Shipping Address</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_32px_32px_rgba(26,28,28,0.04)] border border-outline-variant/10">
+<div class="flex justify-between items-start mb-4">
+<div class="space-y-1">
+<p class="font-headline font-bold text-on-surface" style="">Julianne Moore</p>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">721 Fifth Avenue<br>New York, NY 10022</p>
+<p class="text-on-surface-variant text-sm" style="">+1 (212) 555-0198</p>
+</div>
+<button class="text-outline text-sm font-medium hover:text-primary transition-colors" style="">Change</button>
+</div>
+</div>
+</section>
+<!-- Shipping Method Section - Bento Style Selection -->
+<section class="space-y-4">
+<h2 class="text-xl font-bold tracking-tight text-primary" style="">Shipping Method</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Standard -->
+<label class="relative flex cursor-pointer" style="">
+<input checked="" class="peer sr-only" name="shipping" type="radio" value="standard">
+<div class="w-full bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 peer-checked:border-primary peer-checked:ring-1 peer-checked:ring-primary transition-all shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-start mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping" style="">local_shipping</span>
+<span class="text-on-tertiary-container font-bold text-xs uppercase tracking-widest bg-tertiary-fixed px-2 py-1 rounded" style="">Free</span>
+</div>
+<p class="font-headline font-semibold text-on-surface" style="">Standard Delivery</p>
+<p class="text-xs text-on-surface-variant mt-1" style="">3-5 Business Days</p>
+</div>
+</label>
+<!-- Express -->
+<label class="relative flex cursor-pointer" style="">
+<input class="peer sr-only" name="shipping" type="radio" value="express">
+<div class="w-full bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20 peer-checked:border-primary peer-checked:ring-1 peer-checked:ring-primary transition-all shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-start mb-2">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="bolt" style="">bolt</span>
+<span class="text-on-surface font-bold text-sm" style="">$15.00</span>
+</div>
+<p class="font-headline font-semibold text-on-surface" style="">Express Delivery</p>
+<p class="text-xs text-on-surface-variant mt-1" style="">1-2 Business Days</p>
+</div>
+</label>
+</div>
+</section>
+<!-- Payment Method Section -->
+<section class="space-y-4">
+<h2 class="text-xl font-bold tracking-tight text-primary" style="">Payment Method</h2>
+<div class="bg-surface-container-lowest rounded-xl p-6 flex items-center justify-between shadow-[0_32px_32px_rgba(26,28,28,0.04)] border border-outline-variant/10">
+<div class="flex items-center gap-4">
+<div class="w-12 h-8 bg-primary-container rounded flex items-center justify-center">
+<span class="text-primary-fixed text-[10px] font-black italic tracking-tighter" style="">VISA</span>
+</div>
+<div class="space-y-0.5">
+<p class="font-headline font-bold text-on-surface" style="">Visa ending in 4242</p>
+<p class="text-xs text-on-surface-variant" style="">Expires 12/26</p>
+</div>
+</div>
+<button class="text-outline text-sm font-medium hover:text-primary transition-colors" style="">Change</button>
+</div>
+</section>
+<!-- Order Summary Section -->
+<section class="space-y-4 pt-4 border-t border-outline-variant/20">
+<h2 class="text-xl font-bold tracking-tight text-primary" style="">Order Summary</h2>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-3">
+<div class="flex justify-between text-on-surface-variant">
+<span class="text-sm" style="">Subtotal</span>
+<span class="font-medium" style="">$840.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="text-sm" style="">Shipping</span>
+<span class="font-medium" style="">Free</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="text-sm" style="">Estimated Tax</span>
+<span class="font-medium" style="">$67.20</span>
+</div>
+<div class="pt-3 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="font-headline font-bold text-lg text-primary" style="">Total</span>
+<span class="text-secondary font-bold text-[22px] tracking-tight" style="">$907.20</span>
+</div>
+</div>
+</section>
+<!-- Editorial Lookbook Teaser (Design System Component) -->
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden group">
+<img alt="Editorial Collection" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-700" data-alt="luxury fashion editorial shot of high-end garments hanging in a minimalist brutalist architecture setting with sharp sunlight and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWT2fPepYEwGttDarOjQjjsKCMHr_RE0Lc7yngBe1zbGgSmtqQ2LrfrzNQmIqmilmexMUfO8tjtWNFcCw_BwYKKRjbHbdMXO9iMtMIEBA85tqqV6hMxG3Hoe2qP7rKj4h6dj_4nHRLNq8G51J4H_ld4XFqQiwnAeRaFmuf-lD_3gi40yoh6kbiXWo1Iful6JBNtmAsNpkOQ-qLCUStYpJDh_dAFMYpr3XwxbG8-U6s-RPc3xQnj1cmbZiOdALw7vmIX4dwzs_RLMgH" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+<p class="text-white/70 text-[10px] tracking-[0.3em] uppercase mb-1" style="">New Season</p>
+<h3 class="text-white font-headline text-2xl font-black leading-none" style="">FitFlick</h3>
+</div>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-container-lowest/80 backdrop-blur-xl px-6 pt-4 pb-8 border-t border-outline-variant/10 z-50">
+<div class="max-w-2xl mx-auto">
+<button class="w-full h-[52px] bg-primary-container text-on-primary rounded-xl font-label font-bold text-sm tracking-[0.1em] uppercase shadow-lg shadow-primary/20 active:scale-[0.98] transition-all duration-200" style="">
+                PLACE ORDER
+            </button>
+</div>
+</div>
+</body></html>
